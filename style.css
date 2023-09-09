@@ -1,16 +1,55 @@
-.img-1{
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Press Start 2P', sans-serif;
+    color: rgb(202, 150, 52);
+}
+
+.img-1 {
     max-width: 400px;
 }
 
-.img-2{
+.img-2 {
     max-width: 425px;
 }
 
 
-.blank-space{
+.blank-space {
     width: 700px;
 }
 
-.img-a{
+.img-a {
+    max-width: 200px;
+}
+
+.moodal {
+    max-width: 600px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: white;
+    z-index: 5;
+
+
+}
+
+
+.inside {
+    height: 200px;
+}
+
+.blur-background {
+    filter: blur(1.5rem);
+    width: 100%;
+    top: -10%;
+    position: absolute;
+    background-color: black;
+    height: 1200px;
+    z-index: 3;
+    opacity: 0.6;
+}
+
+.test {
     max-width: 200px;
 }

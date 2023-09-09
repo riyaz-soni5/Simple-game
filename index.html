@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-dark">
     <header class="container-fluid">
         <div class="container-fluid text-md-start text-md-center">
-            <h1 class="display-3">Rock, Paper and Scissors</h1>
-            <p class="text-muted display-6">You vs Robot</p>
+            <h1 class="display-4">Rock, Paper and Scissors</h1>
+            <p class="text-white fs-3">You vs Robot</p>
 
         </div>
 
@@ -22,15 +22,11 @@
     <section class="container-md">
         <div class="row justify-content-lg-end justify-content-md-start gap-3">
             <div class="col-md-3 col-sm-2 border border-3 left">
-                <p class=" m-sm-2">Player Score : </p>
+                <p class=" m-sm-2 player-score">Player Score : </p>
 
             </div>
             <div class="col-md-3 col-sm-2 border border-3 text-left">
-                <p class=" m-sm-2">Robot Score : </p>
-
-            </div>
-            <div class="col-md-3 col-sm-2 border border-3 text-left">
-                <p class="m-sm-2">Rounds Left : </p>
+                <p class=" m-sm-2 robot-score">Robot Score : </p>
 
             </div>
         </div>
@@ -41,41 +37,61 @@
         <div class="row">
             <div class="col text-center">
                 <img src="/images-avatar/Human-avatar.jpg" alt=""
-                    class="img-fluid border border-black border-5 m-2 w-75 img-1">
+                    class="img-fluid border border-black border-5 m-2 w-75 img-1 bg-white">
                 <p class="fw-bold">You</p>
             </div>
             <div class="col text text-center">
                 <img src="/images-avatar/Robot-avatar.avif" alt=""
-                    class="img-fluid border border-black border-5 m-2 w-75 img-2">
+                    class="img-fluid border border-black border-5 m-2 w-75 img-2 bg-white">
                 <p class="fw-bold">Robot</p>
             </div>
         </div>
+    </section>
 
 
-        <section class="container-md my-3 border p-lg-2">
-            <div class="row container-lg">
-                <div class="col">
-                    <p class="display-5">Choose: </p>
-                </div>
-                <div class="col">
-                    <img src="/images-moves/stone.png" alt="" class=" img-fluid btn btn-primary">
-
-                </div>
-                <div class="col">
-                    <img src="/images-moves/cut.png" alt="" class="img-fluid btn btn-primary ">
-
-                </div>
-                <div class="col">
-                    <img src="/images-moves/paper.png" alt="" class="img-fluid btn btn-primary ">
-
-                </div>
+    <section class="container-md my-0 border p-lg-2 border-warning">
+        <div class="row container-lg">
+            <div class="col">
+                <p>Choose: </p>
             </div>
+            <div class="col">
+                <button class="btn btn bg-warning test">
+                    <img src="/images-moves/stone.png" alt="" class=" img-fluid option-1">
+                </button>
 
-        </section>
+
+            </div>
+            <div class="col">
+                <button class="btn btn-warning test">
+                    <img src="/images-moves/cut.png" alt="" class="img-fluid option-2">
+                </button>
+
+
+            </div>
+            <div class="col">
+                <button class="btn btn-warning test">
+                    <img src="/images-moves/paper.png" alt="" class="img-fluid option-3">
+                </button>
 
 
 
+            </div>
+        </div>
 
+    </section>
+    <section class="blur-background d-none">
+
+
+    </section>
+
+    <section class="container moodal border d-none">
+        <div class=" container m-2 ms-1 border inside">
+            <div class="modal-body">
+                <p id="result" class="display-6"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary try-again">Try again?</button>
+            </div>
         </div>
 
     </section>
@@ -83,15 +99,8 @@
 
 
 
+    <script src="script.js"></script>
 
-
-
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.js">
-    </script>
-    <script src="script.js">
-
-
-    </script>
 
 </body>
 
